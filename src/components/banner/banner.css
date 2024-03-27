@@ -1,0 +1,72 @@
+.image-slider {
+    position: relative;
+}
+
+.slider-container {
+    display: flex;
+    transition: transform 0.5s ease;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    /* Ensure the arrows are not visible outside the slider */
+    object-fit: contain;
+}
+
+.slider-control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.previous {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.slider-container img {
+    display: block;
+    width: auto;
+    /* Adjust the width as needed */
+}
+
+.slider-control.previous svg {
+    fill: white;
+    /* Color of the arrow */
+    width: 24px;
+    /* Size of the arrow */
+    height: 24px;
+    /* Size of the arrow */
+}
+
+.slider-control.previous {
+    background-color: #000;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    /* Adjust the position as needed */
+    transform: translateY(-50%);
+    width: 40px;
+    /* Adjust the size as needed */
+    height: 40px;
+    /* Adjust the size as needed */
+    border-radius: 50%;
+    /* Make it round */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slider-control.previous:hover {
+    background-color: #333;
+    /* Change color on hover */
+}
